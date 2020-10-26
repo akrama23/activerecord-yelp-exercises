@@ -1,8 +1,8 @@
 class Dish < ActiveRecord::Base
 
     has_many :dishtags
-    has_mamy :tags, through: :dishtags
+    has_many :tags, through: :dishtags
 
-    belongs_to :restaurants
+    belongs_to :restaurant
 
 end
